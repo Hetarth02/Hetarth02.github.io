@@ -14,8 +14,10 @@ body {
     display: box;
     font-family: sans-serif;
     text-align: center;
-    color: black;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    color: whitesmoke;
+    background: linear-gradient(270deg, #ef745c 0%, #34073d 100%);
+    background-size: 200%;
+    background-position: left;
 }
 
 .graph {
@@ -71,7 +73,9 @@ body {
     z-index: 1;
     left: 0;
     top: 0;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    background: linear-gradient(315deg, #ef745c 0%, #34073d 100%);
+    background-size: 450%;
+    background-position: left;
     overflow-x: hidden;
     transition: 0.5s;
 }

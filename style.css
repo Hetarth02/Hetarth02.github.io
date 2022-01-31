@@ -16,20 +16,20 @@ body {
     text-align: center;
     color: rgba(245, 245, 245, 0.884);
     background: linear-gradient(315deg, #ef745c 0%, #34073d 100%);
-    background-size: 300%;
+    background-size: 450%;
     background-position: left;
-    /* animation: grad 5s infinite alternate; */
+    animation: grad 10s infinite alternate;
 }
 
-/* @keyframes grad {
+@keyframes grad {
     0% {
-        background-position: left;
+        background-size: 450%;
     }
 
     100% {
-        background-position: right;
+        background-size: 250%;
     }
-} */
+}
 
 .container {
     width: 100%;
