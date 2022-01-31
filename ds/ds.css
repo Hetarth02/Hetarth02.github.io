@@ -16,7 +16,7 @@ body {
     text-align: center;
     color: whitesmoke;
     background: linear-gradient(270deg, #ef745c 0%, #34073d 100%);
-    background-size: 200%;
+    background-size: 300%;
     background-position: left;
 }
 
@@ -28,21 +28,31 @@ body {
 }
 
 .pair {
-    margin: 0.5rem 2rem;
+    margin: 0.5rem auto;
     width: 90%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    gap: 1rem;
 }
 
 .pair div {
-    padding: 0.5rem;
-    width: 50%;
+    padding: 0 1rem;
+    width: 55%;
 }
 
-.pair p {
-    width: 50%;
+.exp {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 1.8ch;
     text-align: justify;
+}
+
+.exp ul {
+    padding: 0 1rem;
 }
 
 @media (max-width: 600px) {
@@ -50,15 +60,11 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 2rem;
-    }
-
-    .pair p {
-        width: 80%;
+        margin: 0 auto;
     }
 
     .pair div {
-        width: 80%;
+        width: 75%;
     }
 }
 
@@ -92,14 +98,14 @@ body {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: black;
+    color: aliceblue;
     display: block;
     transition: 0.3s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #f1f1f1;
+    color: black;
 }
 
 .overlay .closebtn {
@@ -126,9 +132,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    margin: 1rem 2rem;
-    color: black;
+    margin: 1rem auto;
+    color: aqua;
     top: -3rem;
 }
 
@@ -138,15 +143,16 @@ body {
 }
 
 .bio p {
-    width: 70%;
-    font-size: 2ch;
+    width: 80%;
+    font-size: 1.8ch;
+    font-weight: lighter;
 }
 
 .pic img {
-    width: 10em;
+    width: 8em;
     border-radius: 5em;
     margin: 1rem;
-    box-shadow: 0px 0px 20px 0px rgb(44, 41, 49);
+    box-shadow: 0px 0px 20px 0px rgb(72, 61, 90);
 }
 
 .inline-container {
@@ -158,7 +164,7 @@ body {
 .inline-container a {
     font-size: 3ch;
     padding: 1.5rem 2rem;
-    color: black;
+    color: aliceblue;
 }
 
 .inline-container a:hover,

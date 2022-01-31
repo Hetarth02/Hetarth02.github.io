@@ -1,3 +1,9 @@
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    dots: '.dots',
+    draggable: true,
+});
+
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
 } 
