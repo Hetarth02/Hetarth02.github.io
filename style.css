@@ -16,18 +16,18 @@ body {
     text-align: center;
     color: whitesmoke;
     background: linear-gradient(315deg, #ef745c 0%, #34073d 100%);
-    background-size: 450%;
+    background-size: 300%;
     background-position: left;
-    animation: grad 6s infinite alternate;
+    animation: grad 8s infinite alternate;
 }
 
 @keyframes grad {
     0% {
-        background-size: 400%;
+        background-size: 300%;
     }
 
     100% {
-        background-size: 200%;
+        background-size: 100%;
     }
 }
 
@@ -63,13 +63,13 @@ body {
     color: whitesmoke;
     border-style: none;
     border-radius: 0.2rem;
-    transition: ease-in-out 300ms;
+    transition: ease-in-out 0.3s;
 }
 
 .child button:hover,
 .child button:focus {
     font-size: 2ch;
-    color: #343434;
+    color: #202020;
     background-color: rgb(189, 173, 173);
 }
 
@@ -80,11 +80,11 @@ body {
 .social a {
     font-size: 3ch;
     padding: 1rem;
-    color: aliceblue;
-    transition: ease 0.5s;
+    color: rgb(214, 235, 253);
+    transition: ease 0.3s;
 }
 
 .social a:hover,
 .social a:focus {
-    font-size: 4ch;
+    font-size: 3.5ch;
 }
