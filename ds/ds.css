@@ -153,7 +153,7 @@ body {
 }
 
 .bio p {
-    width: 80%;
+    width: 70%;
     font-size: 1.8ch;
     font-weight: lighter;
 }
@@ -198,6 +198,8 @@ body {
 .profile:focus {
     font-size: 2ch;
     border-style: none;
+    color: black;
+    background-color: whitesmoke;
 }
 
 .project {
