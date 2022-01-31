@@ -14,14 +14,14 @@ body {
     display: box;
     font-family: sans-serif;
     text-align: center;
-    color: #281e1e;
-    background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
-    background-size: 200%;
+    color: rgba(245, 245, 245, 0.884);
+    background: linear-gradient(315deg, #ef745c 0%, #34073d 100%);
+    background-size: 300%;
     background-position: left;
-    animation: grad 5s infinite alternate;
+    /* animation: grad 5s infinite alternate; */
 }
 
-@keyframes grad {
+/* @keyframes grad {
     0% {
         background-position: left;
     }
@@ -29,7 +29,7 @@ body {
     100% {
         background-position: right;
     }
-}
+} */
 
 .container {
     width: 100%;
@@ -46,12 +46,13 @@ body {
 
 .child h1 {
     margin: 1rem;
-    font-size: 4.5ch;
+    font-size: 4.2ch;
 }
 
 .child h3 {
     margin: 1rem;
     font-size: 2ch;
+    font-weight: lighter;
 }
 
 .child button {
@@ -68,8 +69,8 @@ body {
 .child button:hover,
 .child button:focus {
     font-size: 2ch;
-    color: rgb(3 4 4);
-    background-color: #ffffff75;
+    color: #343434;
+    background-color: rgb(189, 173, 173);
 }
 
 .social {
@@ -79,7 +80,7 @@ body {
 .social a {
     font-size: 3ch;
     padding: 1rem;
-    color: rgb(37, 37, 37);
+    color: whitesmoke;
     transition: ease 0.5s;
 }
 
