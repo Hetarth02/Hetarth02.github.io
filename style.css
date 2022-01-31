@@ -14,20 +14,20 @@ body {
     display: box;
     font-family: sans-serif;
     text-align: center;
-    color: rgba(245, 245, 245, 0.884);
+    color: whitesmoke;
     background: linear-gradient(315deg, #ef745c 0%, #34073d 100%);
     background-size: 450%;
     background-position: left;
-    animation: grad 10s infinite alternate;
+    animation: grad 6s infinite alternate;
 }
 
 @keyframes grad {
     0% {
-        background-size: 450%;
+        background-size: 400%;
     }
 
     100% {
-        background-size: 250%;
+        background-size: 200%;
     }
 }
 
@@ -60,7 +60,7 @@ body {
     margin: 0.6rem 0.5rem;
     background-color: rgb(37, 37, 37);
     font-size: 1.8ch;
-    color: aliceblue;
+    color: whitesmoke;
     border-style: none;
     border-radius: 0.2rem;
     transition: ease-in-out 300ms;
@@ -80,7 +80,7 @@ body {
 .social a {
     font-size: 3ch;
     padding: 1rem;
-    color: whitesmoke;
+    color: aliceblue;
     transition: ease 0.5s;
 }
 
