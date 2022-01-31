@@ -15,7 +15,20 @@ body {
     font-family: sans-serif;
     text-align: center;
     color: #281e1e;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+    background-size: 200%;
+    background-position: left;
+    animation: grad 5s infinite alternate;
+}
+
+@keyframes grad {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
 }
 
 .container {
