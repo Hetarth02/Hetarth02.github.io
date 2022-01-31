@@ -27,6 +27,16 @@ body {
     align-items: center;
 }
 
+.github-api {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2ch;
+    text-align: justify;
+    font-weight: lighter;
+    color: aliceblue;
+    margin-top: 0.6rem;
+}
+
 .pair {
     margin: 0.5rem auto;
     width: 90%;

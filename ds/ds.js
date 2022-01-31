@@ -35,11 +35,11 @@ const config1 = {
                 title: {
                     display: true,
                     text: 'Programming Lang.',
-                    color: 'black'
+                    color: 'white'
                 },
                 position: 'right',
                 labels: {
-                    color: 'black'
+                    color: 'white'
                 }
             }
         }
@@ -85,11 +85,11 @@ const config2 = {
                 title: {
                     display: true,
                     text: 'Daywise Commit',
-                    color: 'black'
+                    color: 'white'
                 },
                 position: 'right',
                 labels: {
-                    color: 'black'
+                    color: 'white'
                 }
             }
         }
@@ -135,10 +135,10 @@ const config3 = {
         plugins: {
             legend: {
                 title: {
-                    color: 'black'
+                    color: 'white'
                 },
                 labels: {
-                    color: 'black'
+                    color: 'white'
                 }
             }
         }
