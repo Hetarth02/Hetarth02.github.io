@@ -14,7 +14,7 @@ body {
     display: box;
     font-family: sans-serif;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     background-color: black;
 }
 
@@ -62,7 +62,7 @@ body {
     margin: 0.6rem 0.5rem;
     background-color: rgb(37, 37, 37);
     font-size: 1.8ch;
-    color: whitesmoke;
+    color: white;
     border-style: none;
     border-radius: 0.2rem;
     transition: ease-in-out 0.3s;
@@ -92,6 +92,6 @@ body {
 }
 
 .my-atropos {
-    width: 50vw;
-    height: 50vh;
+    width: 80%;
+    height: 70%;
 }
