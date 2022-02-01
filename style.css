@@ -70,7 +70,6 @@ body {
 
 .child button:hover,
 .child button:focus {
-    font-size: 2ch;
     color: #202020;
     background-color: rgb(189, 173, 173);
 }
@@ -82,7 +81,7 @@ body {
 .social a {
     font-size: 3ch;
     padding: 1rem;
-    color: rgb(214, 235, 253);
+    color: white;
     transition: ease 0.3s;
 }
 
