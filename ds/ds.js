@@ -12,13 +12,13 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
-const labels1 = ['Python', 'HTML', 'CSS', 'JavaScript', 'PHP', 'Blade', 'Shell', 'Go', 'Jupyter Notebook'];
+const labels1 = ['Python', 'HTML', 'CSS', 'JS', 'PHP', 'Blade', 'Shell', 'Go', 'Jupyter Notebook'];
 
 const data1 = {
     labels: labels1,
     datasets: [{
         label: 'Languages',
-        backgroundColor: ['#0B0033b0', '#832232b0', '#CE8964b0', '#114B5Fb0', '#64113Fb0', '#E6AF2Eb0', '#581F18b0', '#370031b0', '#2C4251b0'],
+        backgroundColor: ['#5F7A61B0', '#7267CBB0', '#FFE652B0', '#8BCDCDB0', '#ECB365B0', '#FFFFFFB0', '#C1DEAEB0', '#FF865EB0', '#B088F9B0'],
         borderColor: 'transparent',
         data: [6344, 33264, 22510, 4812, 404171, 91545, 3506, 263, 2963787],
     }]
@@ -34,10 +34,10 @@ const config1 = {
             legend: {
                 title: {
                     display: true,
-                    text: 'Programming Lang.',
+                    text: 'Prog. Languages',
                     color: 'white'
                 },
-                position: 'right',
+                position: 'bottom',
                 labels: {
                     color: 'white'
                 }
@@ -66,8 +66,8 @@ const labels2 = [
 const data2 = {
     labels: labels2,
     datasets: [{
-        label: 'Daywise Commit Freq.',
-        backgroundColor: ['#2A342Eb0', '#3E5543b0', '#722E66b0', '#6A6C48b0', '#281E30b0', '#646723b0', '#3C6464b0'],
+        label: 'Commits',
+        backgroundColor: ['#B088F9B0', '#FFF76AB0', '#FBF6F0B0', '#8BCDCDB0', '#C1DEAEB0', '#D49A89B0', '#797A7EB0'],
         opacity: 0.5,
         borderColor: 'transparent',
         data: [10, 28, 14, 23, 38, 27, 25],
@@ -84,10 +84,10 @@ const config2 = {
             legend: {
                 title: {
                     display: true,
-                    text: 'Daywise Commit',
+                    text: 'Daywise Commits',
                     color: 'white'
                 },
-                position: 'right',
+                position: 'bottom',
                 labels: {
                     color: 'white'
                 }
@@ -118,16 +118,37 @@ const labels3 = [
 
 const data3 = {
     labels: labels3,
-    datasets: [{
-        label: 'Monthly Commit Freq.',
-        backgroundColor: 'magenta',
-        borderColor: 'black',
-        data: [21, 10, 4, 2, 0, 0, 17, 1, 11, 28, 71, 9],
-    }]
+    datasets: [
+        {
+            label: '2017 Dataset',
+            backgroundColor: '#FFB319',
+            data: [0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 20, 0],
+        },
+        {
+            label: '2019 Dataset',
+            backgroundColor: '#C1DEAE',
+            data: [0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 20, 0],
+        },
+        {
+            label: '2020 Dataset',
+            backgroundColor: '#8E806A',
+            data: [0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 20, 0],
+        },
+        {
+            label: '2021 Dataset',
+            backgroundColor: '#B980F0',
+            data: [0, 0, 4, 0, 0, 0, 15, 1, 11, 26, 51, 9],
+        },
+        {
+            label: '2022 Dataset',
+            backgroundColor: '#456268',
+            data: [21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        },
+    ]
 };
 
 const config3 = {
-    type: 'line',
+    type: 'bar',
     data: data3,
     options: {
         responsive: true,
@@ -137,9 +158,19 @@ const config3 = {
                 title: {
                     color: 'white'
                 },
+                position: 'bottom',
                 labels: {
                     color: 'white'
                 }
+            }
+        },
+        responsive: true,
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true
             }
         }
     }
