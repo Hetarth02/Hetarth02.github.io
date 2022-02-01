@@ -156,6 +156,8 @@ const config3 = {
         plugins: {
             legend: {
                 title: {
+                    display: true,
+                    text: 'Yearwise Commits',
                     color: 'white'
                 },
                 position: 'bottom',
