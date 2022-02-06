@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hetarth Shah</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="../atropos.min.css ">
     <link rel="stylesheet" href="ds.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div class="profile" onclick="openNav()">
@@ -38,80 +39,113 @@
         </div>
     </div>
     <br>
-    <div class="glider-contain">
-        <div class="glider">
-            <div>
-                <div class="github-api">
-                    <p>
-                        Following graphs depict my Github activity as a data science pipeline. The visuals are fully interactive, hover or click over any slice, point of the graphs or try clicking on any of the legends. SWIPE RIGHT!
-                    </p>
-                    <br>
-                    <section style="padding: 0 1rem;">
-                        <ul>
-                            <li><span><i class="bi bi-hdd-network-fill"></i> Data Source:</span> My Github Profile</li>
-                            <br>
-                            <li><span><i class="bi bi-shuffle"></i> Data Fetched:</span> Using Python and Github API</li>
-                            <br>
-                            <li><span><i class="bi bi-hypnotize"></i> EDA:</span> Using Python</li>
-                            <br>
-                            <li><span><i class="bi bi-activity"></i> Data Visualisation:</span> Using ChartJs</li>
-                        </ul>
-                    </section>
+    <div class="github-api">
+        <p>
+            The visuals are fully interactive, hover or click over any slice, point of the graphs or try clicking on any of the legends.
+        </p>
+    </div>
+    <div class="main-container">
+        <div class="row-content">
+            <div class="atropos my-atropos hover1">
+                <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                        <div class="atropos-inner">
+                            <div class="pair chart1">
+                                <div data-atropos-offset="5">
+                                    <canvas id="myChart1"></canvas>
+                                </div>
+                                <section class="exp">
+                                    <p class="desc">
+                                        A Donut Chart which represents the languages I have worked with, distributed using <i>"Number of lines written"</i> as a metric.
+                                    </p>
+                                    <ul>
+                                        <li>Juypter Notebook comes out as the most used.</li>
+                                        <br>
+                                        <li>The next most used is PHP(I am a web dev too!).</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="pair">
-                    <div>
-                        <canvas id="myChart1"></canvas>
+            <div class="atropos my-atropos hover2">
+                <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                        <div class="atropos-inner">
+                            <div class="pair chart2">
+                                <div data-atropos-offset="5">
+                                    <canvas id="myChart2"></canvas>
+                                </div>
+                                <section class="exp">
+                                    <p class="desc">
+                                        Polar chart depicting commits on every day of week since I started my Github.
+                                    </p>
+                                    <ul>
+                                        <li>Highest number of commits would be on Friday as it is near to weekend!</li>
+                                        <br>
+                                        <li>Monday ranks last, still in the weekend vibes.</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
                     </div>
-                    <section class="exp">
-                        <p class="desc">
-                            A Donut Chart which represents the languages I have worked with, distributed using <i>"Number of lines written"</i> as a metric.
-                        </p>
-                        <!-- <br> -->
-                        <ul>
-                            <li>Juypter Notebook comes out as the most used.</li>
-                            <br>
-                            <li>The next most used is PHP(I am a web dev too!).</li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-            <div>
-                <div class="pair">
-                    <div>
-                        <canvas id="myChart2"></canvas>
-                    </div>
-                    <section class="exp">
-                        <p class="desc">
-                            Polar chart depicting commits on every day of week since I started my Github.
-                        </p>
-                        <ul>
-                            <li>Highest number of commits would be on Friday as it is near to weekend!</li>
-                            <br>
-                            <li>Monday ranks last, still in the weekend vibes.</li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-            <div>
-                <div class="pair" style="flex-direction: column;">
-                    <div style="width: 90%; height: 50vh;">
-                        <canvas id="myChart3"></canvas>
-                    </div>
-                    <section class="exp">
-                        <p class="desc">
-                            My year wise commits stacked on top of each other in a Stacked Bar Graph. The most commits were made in 2021, and I am hoping to break this record in 2022!
-                        </p>
-                    </section>
                 </div>
             </div>
         </div>
-        <div role="tablist" class="dots"></div>
+        <div>
+            <div class="atropos my-atropos hover3">
+                <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                        <div class="atropos-inner">
+                            <div class="pair chart3">
+                                <div data-atropos-offset="5" style="width: 100%; height: 50vh;">
+                                    <canvas id="myChart3"></canvas>
+                                </div>
+                                <section class="exp">
+                                    <p class="desc">
+                                        My year wise commits stacked on top of each other in a Stacked Bar Graph. The most commits were made in 2021, and I am hoping to break this record in 2022!
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <br>
+    <div class="research">
+        <h1 style="font-family: 'Trebuchet MS', sans-serif;">My Research Work & Publications</h1>
+        <div class="trophy">
+            <div class="bookcover">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/417PW-G6tIL._SX331_BO1,204,203,200_.jpg" alt="A Bird's Eye view of Data Visualisation">
+            </div>
+            <div class="book-info">
+                <h1>A Bird's Eye view of Data Visualisation</h1>
+                <br>
+                <p>
+                    An internationally published thesis less educational text book on "Data Visualisation" part of the Data Science Pipline.
+                </p>
+                <br>
+                <p>
+                    ISBN - 9798201278588
+                </p>
+                <br>
+                <p>Available and published on,</p>
+                <br>
+                <div class="inline-container">
+                    <a href="https://books2read.com/u/3RJoWG"><i class="bi bi-journal-bookmark-fill"></i></a>
+                    <a href="https://www.google.co.in/books/edition/A_Bird_s_Eye_view_of_Data_Visualisation/g_ZVEAAAQBAJ"><i class="bi bi-google"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="projects"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../atropos.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 <script type="text/javascript" src="ds.js"></script>
 </html>

@@ -1,8 +1,7 @@
-new Glider(document.querySelector('.glider'), {
-    slidesToShow: 1,
-    dots: '.dots',
-    draggable: true,
-});
+ScrollReveal().reveal('.chart1', { delay: 500, reset: true });
+ScrollReveal().reveal('.chart2', { delay: 700, reset: true });
+ScrollReveal().reveal('.chart3', { delay: 800, reset: true });
+ScrollReveal().reveal('.research', { delay: 500, reset: true });
 
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
@@ -10,6 +9,12 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
+}
+
+let position = 'right';
+
+if (screen.width < 500){
+    position = 'bottom';
 }
 
 const labels1 = ['Python', 'HTML', 'CSS', 'JS', 'PHP', 'Blade', 'Shell', 'Go', 'Jupyter Notebook'];
@@ -30,6 +35,12 @@ const config1 = {
     options: {
         responsive:true,
         maintainAspectRatio: false,
+        animation: {
+            onComplete: () => {
+                delayed = true;
+            },
+            delay: 1000
+        },
         plugins: {
             legend: {
                 title: {
@@ -37,7 +48,7 @@ const config1 = {
                     text: 'Prog. Languages',
                     color: 'white'
                 },
-                position: 'bottom',
+                position: position,
                 labels: {
                     color: 'white'
                 }
@@ -80,6 +91,12 @@ const config2 = {
     options: {
         responsive:true,
         maintainAspectRatio: false,
+        animation: {
+            onComplete: () => {
+                delayed = true;
+            },
+            delay: 1000
+        },
         plugins: {
             legend: {
                 title: {
@@ -87,7 +104,7 @@ const config2 = {
                     text: 'Daywise Commits',
                     color: 'white'
                 },
-                position: 'bottom',
+                position: position,
                 labels: {
                     color: 'white'
                 }
@@ -153,6 +170,12 @@ const config3 = {
     options: {
         responsive: true,
         maintainAspectRatio: false,
+        animation: {
+            onComplete: () => {
+                delayed = true;
+            },
+            delay: 1000
+        },
         plugins: {
             legend: {
                 title: {
@@ -166,7 +189,6 @@ const config3 = {
                 }
             }
         },
-        responsive: true,
         scales: {
             x: {
                 stacked: true,
@@ -182,3 +204,15 @@ const myChart3 = new Chart(
     document.getElementById('myChart3'),
     config3
 );
+
+const myAtropos1 = Atropos({
+    el: '.hover1',
+});
+
+const myAtropos2 = Atropos({
+    el: '.hover2',
+});
+
+const myAtropos3 = Atropos({
+    el: '.hover3',
+});
