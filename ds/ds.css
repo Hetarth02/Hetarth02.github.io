@@ -103,10 +103,6 @@ body {
     text-align: justify;
 }
 
-.exp ul {
-    padding: 0 1rem;
-}
-
 .pad {
     padding: 1rem;
 }
@@ -217,11 +213,14 @@ body {
 }
 
 .profile {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     display: flex;
     width: 100%;
     padding: 0.5rem;
     margin: 0 auto;
-    background: rgb(19, 19, 19);
+    background: black;
     font-size: 2.5ch;
     color: whitesmoke;
     border-style: none;

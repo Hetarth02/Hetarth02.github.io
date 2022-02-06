@@ -1,3 +1,4 @@
+ScrollReveal().reveal('.github-api', { delay: 400, reset: true });
 ScrollReveal().reveal('.chart1', { delay: 500, reset: true });
 ScrollReveal().reveal('.chart2', { delay: 700, reset: true });
 ScrollReveal().reveal('.chart3', { delay: 800, reset: true });
