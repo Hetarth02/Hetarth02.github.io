@@ -18,6 +18,13 @@ body {
     background-color: #161616;
 }
 
+.mobile {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
 .graph {
     display: flex;
     gap: 1rem;
@@ -57,20 +64,6 @@ body {
     align-items: center;
 }
 
-.pair {
-    margin: 0.5rem auto;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.pair div {
-    padding: 1rem;
-    width: 70%;
-}
-
 .chart3 {
     flex-direction: row;
 }
@@ -93,12 +86,8 @@ body {
 }
 
 .exp {
-    width: 100%;
+    width: 90%;
     padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
     font-size: 2ch;
     text-align: justify;
 }
@@ -388,18 +377,8 @@ body {
         margin-left: 0;
     }
 
-    .pair {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .row-content {
         flex-direction: column;
-    }
-
-    .pair div {
-        width: 100%;
     }
 
     .chart3 {
@@ -475,5 +454,20 @@ body {
         font-size: 40px;
         top: 15px;
         right: 35px;
+    }
+}
+
+@media (min-width: 540px) {
+    .exp {
+        width: 70%;
+    }
+
+    .atropos-inner {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .hover2 .atropos-inner {
+        width: 80%;
     }
 }

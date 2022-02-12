@@ -141,27 +141,27 @@ const data3 = {
     labels: labels3,
     datasets: [
         {
-            label: '2017 Dataset',
+            label: '2017',
             backgroundColor: '#FFB319',
             data: [0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 20, 0],
         },
         {
-            label: '2019 Dataset',
+            label: '2019',
             backgroundColor: '#C1DEAE',
             data: [0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 20, 0],
         },
         {
-            label: '2020 Dataset',
+            label: '2020',
             backgroundColor: '#8E806A',
             data: [0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 20, 0],
         },
         {
-            label: '2021 Dataset',
+            label: '2021',
             backgroundColor: '#B980F0',
             data: [0, 0, 4, 0, 0, 0, 15, 1, 11, 26, 51, 9],
         },
         {
-            label: '2022 Dataset',
+            label: '2022',
             backgroundColor: '#456268',
             data: [21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         },
