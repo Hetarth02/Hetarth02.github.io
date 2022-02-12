@@ -315,7 +315,12 @@ body {
     align-items: center;
     width: 70%;
     border-radius: 10px;
-    margin: 0 auto;
+    padding: 1rem;
+    transition: ease 300ms;
+}
+
+.project-pair:hover {
+    box-shadow: 0px 0px 20px 10px #4a4ae14f;
 }
 
 .project-image {
@@ -332,11 +337,12 @@ body {
 
 .project-info {
     width: 75%;
-    text-align: justify;
+    text-align: left;
     padding: 1rem;
 }
 
 .project-info h1 {
+    text-align: center;
     font-size: 3ch;
 }
 
