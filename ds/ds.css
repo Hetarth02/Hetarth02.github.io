@@ -256,16 +256,6 @@ body {
     cursor: pointer;
 }
 
-.project {
-    width: 20rem;
-    height: 25rem;
-    max-width: 100%;
-    padding: 1rem;
-    margin: 0 auto;
-    background-color: red;
-    border-radius: 0.5rem;
-}
-
 .trophy {
     margin: 2rem auto;
     width: 80%;
@@ -306,6 +296,85 @@ body {
 
 .book-info p {
     font-size: 2ch;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.project-pair {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.project-image {
+    flex: 1 1 auto;
+    width: 70%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: #ffffffcc;
+}
+
+.project-image img {
+    width: 50%;
+}
+
+.project-info {
+    width: 75%;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.project-info h1 {
+    font-size: 3ch;
+}
+
+.project-info p {
+    padding: 1rem 0;
+}
+
+.cont {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tech img {
+    padding: 0.1rem;
+    width: 2rem;
+}
+
+.project-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.project-link a button {
+    color: white;
+    padding: 0.6rem;
+    font-size: 2.5ch;
+    border: 1px solid goldenrod;
+    background-color: transparent;
+}
+
+.project-link a button i {
+    padding: 0 1rem;
+}
+
+.project-link:hover {
+    background-color: rgba(218, 165, 32, 0.5);
 }
 
 @media (max-width: 830px) {
@@ -358,6 +427,36 @@ body {
     .book-info {
         padding: 1rem;
         width: 80%;
+    }
+
+    .project-pair {
+        flex-direction: column;
+    }
+
+    .cont {
+        font-size: 1.8ch;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cont .project-link {
+        margin-top: 0.8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .project-pair {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .project-pair {
+        width: 100%;
     }
 }
 

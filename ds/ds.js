@@ -3,6 +3,9 @@ ScrollReveal().reveal('.chart1', { delay: 500, reset: true });
 ScrollReveal().reveal('.chart2', { delay: 500, reset: true });
 ScrollReveal().reveal('.chart3', { delay: 500, reset: true });
 ScrollReveal().reveal('.research', { delay: 500, reset: true });
+ScrollReveal().reveal('.p1', { delay: 500, reset: true });
+ScrollReveal().reveal('.p2', { delay: 500, reset: true });
+ScrollReveal().reveal('.p3', { delay: 500, reset: true });
 
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
