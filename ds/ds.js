@@ -40,7 +40,7 @@ const config1 = {
             onComplete: () => {
                 delayed = true;
             },
-            delay: 1000
+            delay: 300
         },
         plugins: {
             legend: {
@@ -96,7 +96,7 @@ const config2 = {
             onComplete: () => {
                 delayed = true;
             },
-            delay: 1000
+            delay: 300
         },
         plugins: {
             legend: {
@@ -175,7 +175,7 @@ const config3 = {
             onComplete: () => {
                 delayed = true;
             },
-            delay: 1000
+            delay: 300
         },
         plugins: {
             legend: {

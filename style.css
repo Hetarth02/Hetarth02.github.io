@@ -23,37 +23,22 @@ body {
     height: 100%;
     position: relative;
     /* background: linear-gradient(315deg, #ef745c 0%, #34073d 100%); */
-    background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
-    background-color: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(315deg, #00C9FF 0%, #92FE9D 100%);
+    background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: multiply;
-    background-size: 300%;
+    background-size: 250%;
     background-position: left;
-    animation: grad 3s infinite alternate;
+    animation: grad 5s infinite alternate;
     border-radius: 10px;
 }
 
 @keyframes grad {
     0% {
-        background-size: 300%;
+        background-position: left;
     }
 
     100% {
-        background-size: 100%;
-    }
-}
-
-.atropos-inner {
-    animation: beat 1s infinite alternate;
-    border-radius: 10px;
-}
-
-@keyframes beat {
-    0% {
-        box-shadow: 0 0 15px 1px #1716b3;
-    }
-
-    100% {
-        box-shadow: 0 0 15px 3px #1716b3;
+        background-position: right;
     }
 }
 
@@ -79,7 +64,7 @@ body {
 .info h3 {
     margin: 1rem;
     font-size: 2ch;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 .info button {
