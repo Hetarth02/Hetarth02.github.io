@@ -1,8 +1,8 @@
-ScrollReveal().reveal('.github-api', { delay: 400, reset: true });
-ScrollReveal().reveal('.chart1', { delay: 500, reset: true });
-ScrollReveal().reveal('.chart2', { delay: 700, reset: true });
-ScrollReveal().reveal('.chart3', { delay: 800, reset: true });
-ScrollReveal().reveal('.research', { delay: 500, reset: true });
+ScrollReveal().reveal('.github-api', { delay: 200, reset: true });
+ScrollReveal().reveal('.chart1', { delay: 300, reset: true });
+ScrollReveal().reveal('.chart2', { delay: 300, reset: true });
+ScrollReveal().reveal('.chart3', { delay: 300, reset: true });
+ScrollReveal().reveal('.research', { delay: 300, reset: true });
 
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
