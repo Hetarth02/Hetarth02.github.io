@@ -1,24 +1,24 @@
 name: CD using Github Actions
-# on: push
-# jobs:
-#     prod-build:
-#         runs-on: ubuntu-latest
-#         steps:
-#             - uses: actions/checkout@v3
+on: push
+jobs:
+    prod-build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
 
-#             - name: Build prod site and move contents from dist to root
-#               run: |
-#                   rm -rf index.html *.webp *.css *.js
-#                   cd source/
-#                   npm i
-#                   npm run build
-#                   sudo mv dist/* ../
-#                   rm -rf dist node_modules
+            - name: Build prod site and move contents from dist to root
+              run: |
+                  rm -rf index.html *.png assets *.xml
+                  cd source/
+                  npm i
+                  npm run build
+                  sudo mv build/* ../
+                  rm -rf build node_modules .svelte-kit
 
-#             - name: Commit files
-#               run: |
-#                   git config --local user.email "action@github.com"
-#                   git config --local user.name "GitHub Action"
-#                   git add .
-#                   git commit -m "Added prod build by Hetarth Shah using Github Actions"
-#                   git push
+            - name: Commit files
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  git add .
+                  git commit -m "Added prod build by Hetarth Shah using Github Actions"
+                  git push
