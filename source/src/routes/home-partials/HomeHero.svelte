@@ -1,4 +1,5 @@
 <script>
+    import { LightSwitch } from '@skeletonlabs/skeleton';
     import HomeHeroComponents from './HomeHeroComponents.svelte';
 </script>
 
@@ -52,6 +53,10 @@
                 </svg>
             </a>
         </div>
+    </div>
+
+    <div class="mx-auto md:hidden">
+        <LightSwitch />
     </div>
 
     <!-- Components -->
