@@ -21,7 +21,7 @@
                         <header>
                             <img
                                 src={githubImg}
-                                class="bg-black/50 w-full aspect-[21/9] object-cover"
+                                class="bg-black/50 w-full h-1/2 aspect-[21/9] object-cover"
                                 alt="Svelsa"
                             />
                         </header>
@@ -63,7 +63,7 @@
                         <header>
                             <img
                                 src={snipImg}
-                                class="bg-black/50 w-full aspect-[21/9] object-cover"
+                                class="bg-black/50 w-full h-1/2 aspect-[21/9] object-cover"
                                 alt="Snippet Sauce"
                             />
                         </header>
@@ -105,7 +105,7 @@
                         <header>
                             <img
                                 src={knnImg}
-                                class="bg-black/50 w-full aspect-[21/9] object-cover"
+                                class="bg-black/50 w-full h-1/2 aspect-[21/9] object-cover"
                                 alt="Post"
                             />
                         </header>
