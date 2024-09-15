@@ -1,5 +1,5 @@
 <script lang="ts">
-    import bookImg from '$lib/assets/images/book.jpg';
+    import bookImg from '$lib/assets/images/book.webp';
     import DocsPreview from '$lib/components/DocsPreview/DocsPreview.svelte';
 
     // Components

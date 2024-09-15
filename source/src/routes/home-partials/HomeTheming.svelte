@@ -1,7 +1,7 @@
 <script lang="ts">
     import gsocImg from '$lib/assets/images/company/gsoc.svg';
-    import ordexImg from '$lib/assets/images/company/ordex_logo.jpeg';
-    import imperoImg from '$lib/assets/images/company/impero_logo.jpeg';
+    import ordexImg from '$lib/assets/images/company/ordex_logo.webp';
+    import imperoImg from '$lib/assets/images/company/impero_logo.webp';
     import { TabGroup, Tab } from '@skeletonlabs/skeleton';
 
     type Theme = {

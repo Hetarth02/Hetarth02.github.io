@@ -1,7 +1,7 @@
 <script lang="ts">
-    import knnImg from '$lib/assets/images/knn.png';
-    import snipImg from '$lib/assets/images/snippet_sauce.png';
-    import githubImg from '$lib/assets/images/github_background.png';
+    import knnImg from '$lib/assets/images/knn.webp';
+    import snipImg from '$lib/assets/images/snippet_sauce.webp';
+    import githubImg from '$lib/assets/images/github_background.webp';
     import DocsPreview from '$lib/components/DocsPreview/DocsPreview.svelte';
 
     // Components

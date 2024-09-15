@@ -1,5 +1,5 @@
 <script lang="ts">
-    import profileImg from '$lib/assets/images/profile.jpeg';
+    import profileImg from '$lib/assets/images/profile.webp';
     import { Avatar, LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
@@ -7,7 +7,7 @@
 <div class="aspect-video relative">
     <!-- Avatar -->
     <div class="anim-float-avatar absolute z-[1] top-[32%] left-[40%]">
-        <Avatar src={profileImg} width="w-32" shadow="shadow-xl" />
+        <Avatar src={profileImg} width="w-32" shadow="shadow-xl" alt="Profile Photo" />
     </div>
     <!-- Progress Radial -->
     <div class="anim-float-progress anim-delay-200 absolute z-[1] top-[6%] left-[13%]">
