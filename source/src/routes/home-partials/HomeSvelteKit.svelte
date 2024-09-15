@@ -11,7 +11,7 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-10 items-start">
     <!-- Info -->
-    <div class="space-y-4">
+    <div class="space-y-4" id="Open_source_and_Publications">
         <h2 class="h2">Open source and Publications!</h2>
         <p>
             When I'm not solving bugs, I like to research about different things and sharing them in
@@ -24,6 +24,7 @@
             hover="hover:variant-soft"
             rounded="rounded-container-token"
             padding="!p-4"
+            labelledby="Open_source_and_Publications"
         >
             <ListBoxItem bind:group={showcase} name="showcase" value="Publications">
                 <div class="space-y-2">
@@ -54,7 +55,7 @@
                                 />
                             </header>
                             <div class="p-4 space-y-4 sm:w-[70%]">
-                                <h6 class="h6">ISBN: 9798201278588</h6>
+                                <p class="h6 font-bold">ISBN: 9798201278588</p>
                                 <h3 class="h3">A Bird's Eye view of Data Visualisation</h3>
                                 <article>
                                     <p class="opacity-75">
@@ -65,7 +66,11 @@
                                 <div class="py-4 flex space-x-4">
                                     <div class="flex justify-center space-x-2">
                                         <span class="group chip variant-soft hover:variant-filled">
-                                            <a href="https://books2read.com/u/3RJoWG" class="py-1">
+                                            <a
+                                                href="https://books2read.com/u/3RJoWG"
+                                                class="py-1"
+                                                aria-label="Books2Read Link"
+                                            >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     height="1.2em"
@@ -82,6 +87,7 @@
                                             <a
                                                 href="https://www.google.co.in/books/edition/A_Bird_s_Eye_view_of_Data_Visualisation/g_ZVEAAAQBAJ"
                                                 class="py-1"
+                                                aria-label="Google Books Link"
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +112,7 @@
                             <a
                                 href="https://github.com/themesberg/flowbite-svelte/pull/182"
                                 class="flex flex-col justify-center items-center aspect-square w-full rounded-container-token card-hover bg-blue-400 sm:gap-4"
+                                aria-label="Flowbite merged PR Link"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -124,6 +131,7 @@
                             <a
                                 href="https://github.com/JuliaDocs/Documenter.jl/issues/1536"
                                 class="flex flex-col justify-center items-center aspect-square w-full rounded-container-token card-hover bg-green-400 sm:gap-4"
+                                aria-label="Dcoumenter.jl Issue Link"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -142,6 +150,7 @@
                             <a
                                 href="https://www.npmjs.com/package/@hetarth02/js-array-helpers"
                                 class="flex flex-col justify-center items-center aspect-square w-full rounded-container-token card-hover bg-red-400 sm:gap-4"
+                                aria-label="NPM package Link"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -160,6 +169,7 @@
                             <a
                                 href="https://github.com/Hetarth02"
                                 class="flex flex-col justify-center items-center aspect-square w-full rounded-container-token card-hover features-gradient sm:gap-4"
+                                aria-label="Github Link"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

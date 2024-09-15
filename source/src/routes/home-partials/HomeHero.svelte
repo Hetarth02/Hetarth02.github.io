@@ -14,7 +14,7 @@
         </p>
         <div class="flex gap-4">
             <!-- Email -->
-            <a href="mailto:hetarth02@gmail.com">
+            <a href="mailto:hetarth02@gmail.com" aria-label="Email Link">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
                     <path
                         class="fill-black dark:fill-white"
@@ -24,7 +24,7 @@
             </a>
 
             <!-- Github -->
-            <a href="https://github.com/Hetarth02">
+            <a href="https://github.com/Hetarth02" aria-label="Github Link">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 496 512">
                     <path
                         class="fill-black dark:fill-white"
@@ -34,7 +34,7 @@
             </a>
 
             <!-- Linkedin -->
-            <a href="https://www.linkedin.com/in/hetarth-shah-1ab392220">
+            <a href="https://www.linkedin.com/in/hetarth-shah-1ab392220" aria-label="Linkedin Link">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
                     <path
                         class="fill-black dark:fill-white"
@@ -44,7 +44,7 @@
             </a>
 
             <!-- Hashnode -->
-            <a href="https://hetarth02.hashnode.dev/">
+            <a href="https://hetarth02.hashnode.dev/" aria-label="Hashnode Link">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
                     <path
                         class="fill-black dark:fill-white"

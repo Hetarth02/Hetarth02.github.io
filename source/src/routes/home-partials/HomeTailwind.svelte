@@ -26,7 +26,7 @@
                             />
                         </header>
                         <div class="p-4 space-y-4">
-                            <h6 class="h6">E-commerce</h6>
+                            <p class="h6 font-bold">E-commerce</p>
                             <h3 class="h3">Svelsa Shopfront</h3>
                             <article>
                                 <p class="opacity-75">
@@ -42,6 +42,7 @@
                                 <a
                                     href="https://github.com/Hetarth02/medusa-svelsa"
                                     class="group chip variant-soft hover:variant-filled"
+                                    aria-label="Medusa Svelse Link"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +69,7 @@
                             />
                         </header>
                         <div class="p-4 space-y-4">
-                            <h6 class="h6">Website</h6>
+                            <p class="h6 font-bold">Website</p>
                             <h3 class="h3">Snippet Sauce</h3>
                             <article>
                                 <p class="opacity-75">
@@ -84,6 +85,7 @@
                                 <a
                                     href="https://github.com/Hetarth02/snippet-sauce-backend"
                                     class="group chip variant-soft hover:variant-filled"
+                                    aria-label="Snippet Sauce Backend Link"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +112,7 @@
                             />
                         </header>
                         <div class="p-4 space-y-4">
-                            <h6 class="h6">Algorithm</h6>
+                            <p class="h6 font-bold">Algorithm</p>
                             <h3 class="h3">KNN</h3>
                             <article>
                                 <p class="opacity-75">
@@ -125,6 +127,7 @@
                                 <a
                                     href="https://github.com/Hetarth02/KNN"
                                     class="group chip variant-soft hover:variant-filled"
+                                    aria-label="KNN Algorithm Link"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +149,7 @@
         </DocsPreview>
     </div>
     <!-- Info -->
-    <div class="space-y-4">
+    <div class="space-y-4" id="My_Projects">
         <h2 class="h2">My Projects!</h2>
         <p>
             This is where I've gathered the digital fruits of my late-night coding sessions. If you
@@ -159,6 +162,7 @@
             hover="hover:variant-soft"
             rounded="rounded-container-token"
             padding="!p-4"
+            labelledby="My_Projects"
         >
             <ListBoxItem bind:group={showcase} name="showcase" value="svelsa">
                 <div class="space-y-2">
@@ -184,11 +188,18 @@
                     <p class="!text-sm">An attempt of mine to implement KNN from scratch.</p>
                 </div>
             </ListBoxItem>
-            <ListBoxItem bind:group={showcase} name="showcase" value="link">
-                <a href="https://github.com/Hetarth02" class="space-y-2">
+            <ListBoxItem
+                bind:group={showcase}
+                name="showcase"
+                value="link"
+                on:click={() => {
+                    window.location.href = 'https://github.com/Hetarth02';
+                }}
+            >
+                <div class="space-y-2">
                     <h3 class="h3">🔭And many more...</h3>
                     <p class="!text-sm">There is much more to explore!</p>
-                </a>
+                </div>
             </ListBoxItem>
         </ListBox>
     </div>
