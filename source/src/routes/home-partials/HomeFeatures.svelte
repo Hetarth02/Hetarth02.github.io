@@ -186,7 +186,12 @@
                     {#each skills[category] as feature}
                         <div class="block sm:hidden">
                             <span class="btn-icon" title={feature.title}>
-                                <img src={feature.icon} class="w-full h-full" alt="Skills" />
+                                <img
+                                    src={feature.icon}
+                                    class="w-full h-full"
+                                    alt="Skills"
+                                    loading="lazy"
+                                />
                             </span>
                         </div>
 
@@ -195,7 +200,12 @@
                             title="feature"
                         >
                             <span class="btn-icon">
-                                <img src={feature.icon} class="w-full h-full" alt="Skills" />
+                                <img
+                                    src={feature.icon}
+                                    class="w-full h-full"
+                                    alt="Skills"
+                                    loading="lazy"
+                                />
                             </span>
                             <span class="text-sm">{feature.title}</span>
                         </div>

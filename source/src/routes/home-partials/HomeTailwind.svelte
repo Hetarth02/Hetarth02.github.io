@@ -23,6 +23,7 @@
                                 src={githubImg}
                                 class="bg-black/50 w-full h-1/2 aspect-[21/9] object-cover"
                                 alt="Svelsa"
+                                loading="lazy"
                             />
                         </header>
                         <div class="p-4 space-y-4">
@@ -66,6 +67,7 @@
                                 src={snipImg}
                                 class="bg-black/50 w-full h-1/2 aspect-[21/9] object-cover"
                                 alt="Snippet Sauce"
+                                loading="lazy"
                             />
                         </header>
                         <div class="p-4 space-y-4">
@@ -109,6 +111,7 @@
                                 src={knnImg}
                                 class="bg-black/50 w-full h-1/2 aspect-[21/9] object-cover"
                                 alt="Post"
+                                loading="lazy"
                             />
                         </header>
                         <div class="p-4 space-y-4">

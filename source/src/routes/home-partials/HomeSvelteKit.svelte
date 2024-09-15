@@ -52,6 +52,7 @@
                                     src={bookImg}
                                     class="bg-black/50 object-contain sm:object-cover w-full h-[350px]"
                                     alt="Post"
+                                    loading="lazy"
                                 />
                             </header>
                             <div class="p-4 space-y-4 sm:w-[70%]">

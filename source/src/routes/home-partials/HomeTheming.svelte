@@ -148,7 +148,12 @@
                 .base}"
         >
             <header class={themeStyles[theme].header}>
-                <img src={themeStyles[theme].src} class={themeStyles[theme].img} alt="Companies" />
+                <img
+                    src={themeStyles[theme].src}
+                    class={themeStyles[theme].img}
+                    alt="Companies"
+                    loading="lazy"
+                />
                 <div class="col-span-2 space-y-2">
                     <div class={themeStyles[theme].text2}>
                         {themeStyles[theme].text2_content}
