@@ -15,10 +15,6 @@
         text2_content: string;
         text3: string;
         text3_content: string;
-        progressTrack: string;
-        progressMeter: string;
-        footer: string;
-        button: string;
     };
 
     // Local
@@ -26,51 +22,39 @@
     const themeStyles: Record<string, Theme> = {
         simple: {
             base: 'variant-soft-primary font-sans rounded-container-token',
-            header: 'bg-primary-500 p-4 grid grid-cols-3 gap-8 items-center rounded-tl-container-token rounded-tr-container-token rounded-bl-container-token rounded-br-container-token',
+            header: 'tailwind-gradient p-4 grid grid-cols-3 gap-8 items-center rounded-tl-container-token rounded-tr-container-token rounded-bl-container-token rounded-br-container-token',
             src: gsocImg,
             img: 'bg-white w-full aspect-square rounded-0 -translate-x-0 -translate-y-0 sm:rounded-3xl scale-110 sm:-translate-x-4 sm:-translate-y-4 transition-transform',
-            text1: 'text-on-primary-token text-lg',
+            text1: 'text-on-primary-token text-lg dark:text-primary-100',
             text1_content: 'May 2023 - September 2023',
-            text2: 'text-on-primary-token font-bold text-xl sm:text-3xl',
+            text2: 'text-on-primary-token font-bold text-xl sm:text-3xl dark:text-primary-100',
             text2_content: 'Open Source Developer',
-            text3: 'text-on-primary-token text-lg sm:text-2xl',
-            text3_content: 'Google Summer of Code @ Julia',
-            progressTrack: 'bg-primary-400',
-            progressMeter: 'bg-white',
-            footer: 'p-10 grid grid-cols-5 gap-10 place-items-center rounded-tl-3xl rounded-tr-3xl',
-            button: 'btn-icon'
+            text3: 'text-on-primary-token text-lg sm:text-2xl dark:text-primary-100',
+            text3_content: 'Google Summer of Code @ Julia'
         },
         elegant: {
             base: 'variant-soft-primary font-sans rounded-container-token',
-            header: 'bg-primary-500 p-4 grid grid-cols-3 gap-8 items-center rounded-tl-container-token rounded-tr-container-token rounded-bl-container-token rounded-br-container-token',
+            header: 'tailwind-gradient p-4 grid grid-cols-3 gap-8 items-center rounded-tl-container-token rounded-tr-container-token rounded-bl-container-token rounded-br-container-token',
             src: imperoImg,
             img: 'bg-white w-full aspect-square rounded-0 -translate-x-0 -translate-y-0 sm:rounded-3xl scale-110 sm:-translate-x-4 sm:-translate-y-4 transition-transform',
-            text1: 'text-on-primary-token text-lg',
+            text1: 'text-on-primary-token text-lg dark:text-primary-100',
             text1_content: 'February 2022 - Present',
-            text2: 'text-on-primary-token font-bold text-xl sm:text-3xl',
+            text2: 'text-on-primary-token font-bold text-xl sm:text-3xl dark:text-primary-100',
             text2_content: 'SDE - I',
-            text3: 'text-on-primary-token text-lg sm:text-2xl',
-            text3_content: 'ImperoIT Services Pvt Ltd',
-            progressTrack: 'bg-black/5',
-            progressMeter: 'bg-black',
-            footer: 'p-10 grid grid-cols-5 gap-10 place-items-center',
-            button: 'btn-icon rounded-none text-black ring-[1px] ring-black/5'
+            text3: 'text-on-primary-token text-lg sm:text-2xl dark:text-primary-100',
+            text3_content: 'ImperoIT Services Pvt Ltd'
         },
         playful: {
             base: 'variant-soft-primary font-sans rounded-container-token',
-            header: 'bg-primary-500 p-4 grid grid-cols-3 gap-8 items-center rounded-tl-container-token rounded-tr-container-token rounded-bl-container-token rounded-br-container-token',
+            header: 'tailwind-gradient p-4 grid grid-cols-3 gap-8 items-center rounded-tl-container-token rounded-tr-container-token rounded-bl-container-token rounded-br-container-token',
             src: ordexImg,
             img: 'bg-white w-full aspect-square rounded-0 -translate-x-0 -translate-y-0 sm:rounded-3xl scale-110 sm:-translate-x-4 sm:-translate-y-4 transition-transform',
-            text1: 'text-on-primary-token text-lg',
+            text1: 'text-on-primary-token text-lg dark:text-primary-100',
             text1_content: 'July 2021 - October 2021',
-            text2: 'text-on-primary-token font-bold text-xl sm:text-3xl',
+            text2: 'text-on-primary-token font-bold text-xl sm:text-3xl dark:text-primary-100',
             text2_content: 'Backend Developer Intern',
-            text3: 'text-on-primary-token text-lg sm:text-2xl',
-            text3_content: 'Ordex Technology Solution Inc.',
-            progressTrack: 'bg-black/5',
-            progressMeter: 'bg-white',
-            footer: 'p-10 grid grid-cols-5 gap-10 place-items-center rounded-tl-3xl rounded-tr-3xl',
-            button: 'btn-icon bg-amber-300 text-blue-900'
+            text3: 'text-on-primary-token text-lg sm:text-2xl dark:text-primary-100',
+            text3_content: 'Ordex Technology Solution Inc.'
         }
     };
 </script>
@@ -169,3 +153,14 @@
         </div>
     </div>
 </div>
+
+<style lang="postcss">
+    /* SvelteKit Gradient */
+    .tailwind-gradient {
+        background: linear-gradient(
+            315deg,
+            hsla(217, 91%, 60%, 0.1) 0%,
+            hsla(261, 84%, 45%, 0) 100%
+        );
+    }
+</style>
