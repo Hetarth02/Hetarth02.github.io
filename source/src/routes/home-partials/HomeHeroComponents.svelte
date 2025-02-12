@@ -3,6 +3,10 @@
     import { Avatar, LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
+<svelte:head>
+    <meta property="og:image" content={profileImg} />
+</svelte:head>
+
 <!-- variant-ringed-error -->
 <div class="aspect-video relative">
     <!-- Avatar -->
