@@ -1,12 +1,7 @@
 <script lang="ts">
     import profileImg from '$lib/assets/images/profile.webp';
-    import jpegProfileImg from '$lib/assets/images/profile.jpg';
     import { Avatar, LightSwitch } from '@skeletonlabs/skeleton';
 </script>
-
-<svelte:head>
-    <meta property="og:image" content={jpegProfileImg} />
-</svelte:head>
 
 <!-- variant-ringed-error -->
 <div class="aspect-video relative">
