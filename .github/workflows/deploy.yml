@@ -8,12 +8,12 @@ jobs:
 
             - name: Build prod site and move contents from dist to root
               run: |
-                  rm -rf index.html *.png assets *.xml
+                  rm -rf index.html assets
                   cd source/
                   npm i
                   npm run build
-                  sudo mv build/* ../
-                  rm -rf build node_modules .svelte-kit
+                  sudo mv dist/* ../
+                  rm -rf dist node_modules
 
             - name: Commit files
               run: |
